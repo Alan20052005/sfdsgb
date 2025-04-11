@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Alan Alava Salazar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      background: linear-gradient(90deg, #3498db, #2c3e50);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header h3 {
+      margin-top: 10px;
+      font-weight: normal;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 0.8s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section h2 {
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      margin-top: 0;
+      color: #34495e;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills-list li::before {
+      content: "✔️ ";
+      margin-right: 6px;
+    }
+
+    .contact-info li::before {
+      content: "📍 ";
+      margin-right: 6px;
+    }
+
+    .contact-info li:nth-child(1)::before {
+      content: "📞 ";
+    }
+
+    .contact-info li:nth-child(2)::before {
+      content: "📧 ";
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alan Alava Salazar</h1>
+    <h3>Estudiante de Ingeniería en Sistemas de la Información</h3>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Contacto</h2>
+      <ul class="contact-info">
+        <li>0963082166</li>
+        <li>ajas0402@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Acerca de mí</h2>
+      <p>Tengo 20 años, actualmente curso Ingeniería en Sistemas de la Información en la Universidad de Guayaquil. Soy apasionado por aprender y crecer tanto académica como profesionalmente en mi área.</p>
+    </div>
+
+    <div class="section">
+      <h2>Educación</h2>
+      <ul>
+        <li><strong>Universidad de Guayaquil</strong> – 4to Semestre (cursando)</li>
+        <li><strong>Estudios secundarios:</strong> Unidad Educativa Fiscal Francisco de Orellana</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia Laboral</h2>
+      <p><strong>ALFAPLAST</strong> – Ingreso de datos (Junio 2023 - Julio 2024, Guayaquil)</p>
+    </div>
+
+    <div class="section">
+      <h2>Capacitación - CECAPRE</h2>
+      <ul>
+        <li>-Formación profesional de cajeros bancarios</li>
+        <li>-Historia del sistema monetario</li>
+        <li>-Estructura organizacional de los bancos</li>
+        <li>-Servicios bancarios</li>
+        <li>-Operaciones bancarias: depósitos, retiros, transferencias, pago de servicios</li>
+        <li>-Seguridad bancaria: prevención de fraudes, protocolos de seguridad</li>
+        <li>-Atención al cliente: comunicación, resolución de problemas, promoción de productos</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Habilidades Técnicas</h2>
+      <ul class="skills-list">
+        <li>Lenguajes de programación: Python, Java, C++</li>
+        <li>Análisis de datos: Excel, SQL, Pandas</li>
+        <li>Herramientas: Spyder, Git, Visual Studio Code</li>
+        <li>Microsoft Office: Word, PowerPoint, Excel (intermedio)</li>
+      </ul>
+    </div>
+</body>
+</html>
